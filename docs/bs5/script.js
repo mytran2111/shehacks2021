@@ -9,7 +9,7 @@ function handleLoad() {
 $(document).ready(function() {
     // var choices = []
     // var picker = $('.selectpicker');
-    var picker = $('.js-example-basic-multiple').select2();
+    var picker = $('.selector').select2();
     picker.change((event) => {
         choices = picker.val();
         console.log(choices)

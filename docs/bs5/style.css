@@ -24,7 +24,6 @@ body, html {
     background: var(--td-colour);
     color: white; 
     padding: 0px; 
-    
 }
 
 .jumbotron h1 {
@@ -41,3 +40,4 @@ body, html {
     margin-bottom: 0 !important; 
     padding-bottom: 0 !important; 
 }
+
