@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charsett="UTF-8">
+        <meta name="viewport" content="widtth=device-width, initial-scale=1.0">
+        <title>Book Recommender</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+​
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+        <h1><i class="fa fa-book fa-fw" aria-hidden="true"></i> Book Recommender</h1>
+        </div>
+        <div class="container">
+        <div class="card">
+            <div class="card-header mb-3">
+               <h2>Want to read a book, but don't know what to read?</h2>
+            </div>
+            <div class="card-body no-padding">
+                <h5 class="card-text">You can use our model to find the next book to read. In the search bar below, tell us <b>10</b> books you really enjoyed, or want something similar to. In return, we will give you 10 suggestions.</h5>
+                <select class="js-example-basic-multiple"  name="books[]" multiple="multiple" style="width: 80%; height: 10%; margin-bottom: 0 !important; padding-bottom 0 !important;">
+                    <option>Harry Potter</option>
+                    <option>Lord of the Rings</option>
+                </select>
+                <!-- <select class="selectpicker" multiple data-live-search="true", style="width: 70%; height: 10%">
+                    <option>Harry Potter</option>
+                    <option>1984</option>
+                    <option>Lord of the Rings</option>
+                    <option>Animal Farm</option>
+                  </select> -->
+                <!-- Search bar-->
+            </div>
+        </div>
+    </div>
+    </body>
+    <!--- javascript dependency-->
+    <script src="script.js"></script> 
+</html>
