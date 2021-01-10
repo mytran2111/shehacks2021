@@ -63,4 +63,9 @@ body, html {
     height: 100px;
     background-color: var(--td-font-colour-dark);
     color: white; 
-  }
+}
+
+.confession {
+    display: block; 
+    .display = 'none'; 
+}

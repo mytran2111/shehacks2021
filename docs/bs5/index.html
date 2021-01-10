@@ -21,9 +21,6 @@
         <h1><i class="fa fa-book fa-fw" aria-hidden="true" style="color: #1a5336;"></i>Book Recommender</h1>
         </div>
         <div class="container">
-            <audio autoplay>
-                <source src="tunes.mp3" type="audio/mpeg">
-              </audio>
         <div class="card">
             <div class="card-header mb-3">
                <h2>Want to read a book, but don't know what to read? <i class="fa fa-gamepad" aria-hidden="true"></i></h2>
@@ -10039,12 +10036,14 @@
             <button type="button" class="btn btn-success" id="button" style="background-color: #1a5336"><i class="fa fa-paw fa-fw" aria-hidden="true"></i>Results (make sure you have headphones on)</button>
         </div>
         <div> </div>
+        <div id="confess" style="display: none;">This hack fell apart at exactly 3:26AM on Sunday, 10 Jan, since we could not in the end combine our ML model with our website :-(. One day we will get good and fix this.</div>
+    <div id="hide">
         <div class="card mt-3">
             <div class="card-header mb-3">
                 <h2>Recommendations for you...</h2>
              </div>
              <div class="card-body">
-                 <h5 class="card-text">Based on our ML model, we predict that you'd enjoy the following 10 books:</h5>
+                 <h5 class="card-text">Based on our ML model, we predict that you'd enjoy the following 10 books:</h5> 
                  <div id="text-area" class="pull=right">No predictions yet. Please input <b>10</b> books.</div>
                  <div class="container">
                     <div class="row">
@@ -10066,6 +10065,7 @@
                   </div>
              </div>
         </div>
+    </div>
     </div>
     <div class="footer-margin">
         <footer class="card-footer bg-light footer-font-style text-muted footer-position">Dataset: </a>

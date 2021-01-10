@@ -13,11 +13,16 @@ let prediction = [];
 let length; 
 let button; 
 var snd = new Audio("tunes.mp3");
+let confess; 
+let toHide; 
 
 function handleLoad() { 
     loadModel(); 
     displayResult = document.getElementById('suggestion'); 
     button = document.getElementById('button');
+    confess = document.getElementById('confess')
+    hideElement(confess); 
+    toHide = document.getElementById('hide')
     fetch("https://front-end-books.shereenelaidi.repl.co/books.json").then(async response => {
      bookList = await response.json();
      console.log('start adding to the book list '); 
@@ -93,7 +98,18 @@ function displaySuggestion(){
 function handleClick(){
   snd.play();
   displaySuggestion(); 
+  hideElement(toHide); 
+  showElement(confess); 
 }
+
+function hideElement(element) {
+	element.style.display = "none"; 
+}
+
+function showElement(element) {
+	element.style.display = "block"; 
+}
+
 window.addEventListener('load', handleLoad);  // when load event fires, execute handleLoad
 
 
