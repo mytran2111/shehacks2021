@@ -31,7 +31,7 @@ f = open("cursed_text.html", "w")
 formatted_string = "<option></option>"
 
 for s in range(len(data)):
-	formatted_string = "<option>{} ({})</option>".format(titles[s], authors[s])
+	formatted_string = "<option>{}</option>".format(titles[s])
 	f.write(formatted_string+"\n")
 	print(formatted_string)
 
