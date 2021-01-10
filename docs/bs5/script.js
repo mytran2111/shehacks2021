@@ -9,8 +9,7 @@ function handleLoad() {
 function loadBooks() {
     // load the data from the .json file 
 
-    let URL = "books.json"
-    URL = "https://raw.githubusercontent.com/ShereenElaidi/shehacks/master/books.json?token=AGK4WUHQKTMZGUPRBFOUTWK77JUOC"; 
+    const URL = "https://front-end-books.shereenelaidi.repl.co/books.json"; 
 
     let dropdown = $('selector'); 
     dropdown.empty()
@@ -18,11 +17,14 @@ function loadBooks() {
     dropdown.prop('selectedIndex', 0)
 
     //populate the dropdown with the list of books
-    $.getJSON(URL, function(data) {
-        $.each(data, function (key, entry) {
-            dropdown.append($('<option></option>').attr('value', entry.title).text(entry.title))
-        })
-    }); 
+    console.log("loading books")
+    // $.getJSON(URL, function(data) {
+    //     $.each(data, function (key, entry) {
+    //         console.log("hi")
+    //         console.log(data)
+    //         dropdown.append($('<option></option>').attr('value', entry.authors).text(entry.title))
+    //     })
+    // }); 
 }
 
 
@@ -42,3 +44,6 @@ $(document).ready(function() {
 
 
 window.addEventListener('load', handleLoad);  // when load event fires, execute handleLoad
+
+
+// enjoy the disaster: 
