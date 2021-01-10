@@ -12,6 +12,7 @@ let mapIDToTitle = new Map();
 let prediction = [];
 let length; 
 let button; 
+var snd = new Audio("tunes.mp3");
 
 function handleLoad() { 
     loadModel(); 
@@ -90,6 +91,7 @@ function displaySuggestion(){
 }
 
 function handleClick(){
+  snd.play();
   displaySuggestion(); 
 }
 window.addEventListener('load', handleLoad);  // when load event fires, execute handleLoad
