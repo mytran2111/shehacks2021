@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="jumbotron">
-        <h1><i class="fa fa-book fa-fw" aria-hidden="true"></i> Book Recommender</h1>
+        <h1><i class="fa fa-book fa-fw" aria-hidden="true" style="color: #1a5336;"></i>Book Recommender</h1>
         </div>
         <div class="container">
         <div class="card">
@@ -34,8 +34,15 @@
                 </select>
             </div> 
         </div>
-        <div class="card">
-            
+        <div> </div>
+        <div class="card mt-3">
+            <div class="card-header mb-3">
+                <h2>Recommendations for you...</h2>
+             </div>
+             <div class="card-body">
+                 <h5 class="card-text">Based on our ML model, we predict that you'd enjoy the following 10 books:</h5>
+                 <span id="text-area">No predictions yet. Please input <b>10</b> books.</span>
+             </div>
         </div>
     </div>
     </body>
